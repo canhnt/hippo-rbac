@@ -1,0 +1,27 @@
+<ResourceDomain name="webshop-construction-nodes">
+    <DomainRule id="content-node">
+      <facetrule isEqual="true" type="Reference">
+          <attribute id="jcr:uuid">/content</attribute>
+      </facetrule>
+    </DomainRule>
+    <DomainRule id="content-document-node">
+      <facetrule isEqual="true" type="Reference">
+          <attribute id="jcr:uuid">/content/document</attribute>
+      </facetrule>
+    </DomainRule>
+    <DomainRule id="content-document-ggzcentraal-node">
+      <facetrule isEqual="true" type="Reference">
+          <attribute id="jcr:uuid">/content/document/ggzcentraal</attribute>
+      </facetrule>
+    </DomainRule>
+    <DomainRule id="content-document-ggzcentraal-webshop-node">
+      <facetrule isEqual="true" type="Reference">
+          <attribute id="jcr:uuid">/content/document/ggzcentraal/webshop</attribute>
+      </facetrule>
+    </DomainRule>
+    <DomainRule id="content-document-ggzcentraal-webshop-construction-path">
+      <facetrule isEqual="true" type="Reference">
+          <attribute id="hippo:paths">/content/document/ggzcentraal/webshop/construction</attribute>
+      </facetrule>
+    </DomainRule>
+</ResourceDomain>

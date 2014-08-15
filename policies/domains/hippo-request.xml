@@ -1,0 +1,7 @@
+<ResourceDomain name="hippo-request">
+  <DomainRule id="nodetype-request">
+    <facetrule isEqual="true" type="Name">
+        <attribute id="nodetype">hippo:request</attribute>
+    </facetrule>
+  </DomainRule>
+</ResourceDomain>
