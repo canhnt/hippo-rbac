@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="hippo:domains" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" h:merge="combine">
+    <sv:node sv:name="webshop-merken-nodes" h:merge="combine">
+      <sv:node sv:name="hippo-rbac-authrole" h:merge="append">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hipposys:authrole</sv:value>
+        </sv:property>
+        <sv:property sv:multiple="true" sv:name="hipposys:groups" sv:type="String" h:merge="append">
+          <sv:value>webshop-authors</sv:value>
+          <sv:value>webshop-editors</sv:value>
+        </sv:property>
+        <sv:property sv:name="hipposys:role" sv:type="String" h:merge="override">
+          <sv:value>author</sv:value> <!-- action -->
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="webshop-construction-nodes" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" h:merge="combine">
+      <sv:node sv:name="hippo-rbac-authrole" h:merge="append">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hipposys:authrole</sv:value>
+        </sv:property>
+        <sv:property sv:multiple="true" sv:name="hipposys:groups" sv:type="String" h:merge="append">
+          <sv:value>webshop-authors</sv:value>
+          <sv:value>webshop-editors</sv:value>
+        </sv:property>
+        <sv:property sv:name="hipposys:role" sv:type="String" h:merge="override">
+          <sv:value>readonly</sv:value> <!-- action -->
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="hippo-request" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" h:merge="combine">
+      <sv:node sv:name="hippo-rbac-authrole" h:merge="append">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hipposys:authrole</sv:value>
+        </sv:property>
+        <sv:property sv:multiple="true" sv:name="hipposys:groups" sv:type="String" h:merge="append">
+          <sv:value>webshop-authors</sv:value>
+          <sv:value>webshop-editors</sv:value>
+        </sv:property>
+        <sv:property sv:name="hipposys:role" sv:type="String" h:merge="override">
+          <sv:value>author</sv:value> <!-- action -->
+        </sv:property>
+      </sv:node>
+    </sv:node>
+    <sv:node sv:name="hippo-request" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" h:merge="combine">
+      <sv:node sv:name="hippo-rbac-authrole" h:merge="append">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>hipposys:authrole</sv:value>
+        </sv:property>
+        <sv:property sv:multiple="true" sv:name="hipposys:groups" sv:type="String" h:merge="append">
+          <sv:value>webshop-editors</sv:value>
+        </sv:property>
+        <sv:property sv:name="hipposys:role" sv:type="String" h:merge="override">
+          <sv:value>editor</sv:value> <!-- action -->
+        </sv:property>
+      </sv:node>
+    </sv:node>
+</sv:node>

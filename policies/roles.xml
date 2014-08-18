@@ -1,22 +1,22 @@
 <Roles>
     <Role id="webshop-authors">
         <Permission>
-            <ResourceReference>webshop-construction-nodes</ResourceReference>
-            <Action>readonly</Action>
-        </Permission>
-        <Permission>
-            <ResourceReference>webshop-merken-nodes</ResourceReference>
+            <ResourceDomain>webshop-merken-nodes</ResourceDomain>
             <Action>author</Action>
         </Permission>
         <Permission>
-            <ResourceReference>hippo-request</ResourceReference>
+            <ResourceDomain>webshop-construction-nodes</ResourceDomain>
+            <Action>readonly</Action>
+        </Permission>
+        <Permission>
+            <ResourceDomain>hippo-request</ResourceDomain>
             <Action>author</Action>
         </Permission>
     </Role>
 
     <Role id="webshop-editors" inheritsFrom="webshop-authors">
         <Permission>
-            <ResourceReference>hippo-request</ResourceReference>
+            <ResourceDomain>hippo-request</ResourceDomain>
             <Action>editor</Action>
         </Permission>
     </Role>
